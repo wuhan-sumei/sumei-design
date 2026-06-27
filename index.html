@@ -10,29 +10,29 @@
 html{scroll-behavior:smooth;background:#fafafa;color:#111;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans SC",sans-serif}
 body{background:#fafafa;line-height:1.6;overflow-x:hidden}
 ::selection{background:#b8944a;color:#000}
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px;display:flex;align-items:center;padding:0 60px;background:rgba(250,250,250,.85);border-bottom:1px solid rgba(0,0,0,.06);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:72px;display:flex;align-items:center;padding:0 60px;background:rgba(250,250,250,.85);border-bottom:1px solid rgba(0,0,0,.06);backdrop-filter:blur(20px)}
 .nav-inner{max-width:1700px;width:100%;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
 .nav-logo{font-size:1.25rem;font-weight:700;letter-spacing:.08em;color:#111;text-decoration:none;display:flex;align-items:center;gap:10px}
 .nav-logo span{color:#b8944a}
 .nav-links{display:flex;gap:40px;list-style:none}
 .nav-links a{color:rgba(0,0,0,.55);font-size:.8rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;transition:color .3s}
 .nav-links a:hover{color:#111}
-.hero{min-height:100vh;display:flex;align-items:center;padding:72px 60px 0;position:relative}
+.hero{min-height:100vh;display:flex;align-items:center;padding:72px 60px 0}
 .hero-inner{max-width:1700px;width:100%;margin:0 auto}
-.hero-eyebrow{color:#b8944a;font-size:.7rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px}
-.hero-title{font-size:clamp(3rem,7vw,6rem);font-weight:900;line-height:1.05;letter-spacing:-.02em;margin-bottom:8px}
-.hero-title .accent{color:#b8944a}
-.hero-sub{color:rgba(0,0,0,.55);max-width:520px;margin-bottom:48px;font-size:clamp(.95rem,1.3vw,1.1rem);font-weight:300;line-height:1.8}
+.hero-e{color:#b8944a;font-size:.7rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px}
+.hero-h1{font-size:clamp(3rem,7vw,6rem);font-weight:900;line-height:1.05;letter-spacing:-.02em;margin-bottom:8px}
+.hero-h1 .ac{color:#b8944a}
+.hero-p{color:rgba(0,0,0,.55);max-width:520px;margin-bottom:48px;font-size:clamp(.95rem,1.3vw,1.1rem);font-weight:300;line-height:1.8}
 .hero-cta{display:flex;align-items:center;gap:20px}
 .btn{background:#b8944a;color:#000;padding:16px 36px;font-size:.85rem;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:10px;border:none;cursor:pointer;transition:all .3s}
 .btn:hover{box-shadow:0 0 40px rgba(184,148,74,.25);transform:translateY(-2px)}
-.btn-outline{color:#111;padding:16px 36px;font-size:.85rem;font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(0,0,0,.2);transition:all .3s}
-.btn-outline:hover{background:rgba(0,0,0,.03);border-color:rgba(0,0,0,.4)}
+.bo{color:#111;padding:16px 36px;font-size:.85rem;font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(0,0,0,.2);transition:all .3s}
+.bo:hover{background:rgba(0,0,0,.03)}
 .sec{padding:120px 60px}
-.sec-inner{max-width:1700px;margin:0 auto}
-.sec-label{color:#b8944a;font-size:.7rem;font-weight:500;letter-spacing:.25em;text-transform:uppercase;margin-bottom:16px;text-align:center}
-.sec-title{font-size:clamp(2rem,3.5vw,2.8rem);font-weight:700;text-align:center;margin-bottom:60px}
-.sec-bg{background:#f2f2f2}
+.si{max-width:1700px;margin:0 auto}
+.sl{color:#b8944a;font-size:.7rem;font-weight:500;letter-spacing:.25em;text-transform:uppercase;margin-bottom:16px;text-align:center}
+.st{font-size:clamp(2rem,3.5vw,2.8rem);font-weight:700;text-align:center;margin-bottom:60px}
+.ab-bg{background:#f2f2f2}
 footer{border-top:1px solid rgba(0,0,0,.06);padding:30px 60px;display:flex;justify-content:space-between;align-items:center;color:rgba(0,0,0,.35);font-size:.7rem;letter-spacing:.05em}
 @media(max-width:768px){nav{padding:0 20px}.sec{padding:60px 20px}.hero{padding:72px 20px 0}}
 </style>
@@ -49,25 +49,23 @@ footer{border-top:1px solid rgba(0,0,0,.06);padding:30px 60px;display:flex;justi
 </ul>
 </div>
 </nav>
-
 <section id="hero" class="hero">
 <div class="hero-inner">
-<p class="hero-eyebrow">Wuhan · Interior Design Studio</p>
-<h1 class="hero-title">速美<span class="accent">设计</span><br>为空间注入灵魂</h1>
-<p class="hero-sub">14步标准化设计流程，从勘测到落地<br>让每一个空间都成为值得品味的生活作品</p>
+<p class="hero-e">Wuhan · Interior Design Studio</p>
+<h1 class="hero-h1">速美<span class="ac">设计</span><br>为空间注入灵魂</h1>
+<p class="hero-p">14步标准化设计流程，从勘测到落地<br>让每一个空间都成为值得品味的生活作品</p>
 <div class="hero-cta">
 <a href="#contact" class="btn">预约设计咨询 →</a>
-<a href="#projects" class="btn-outline">查看案例</a>
+<a href="#projects" class="bo">查看案例</a>
 </div>
 </div>
 </section>
-
 <section id="about" class="sec">
-<div class="sec-inner">
+<div class="si">
 <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:80px;align-items:center">
 <div style="max-width:400px"><img src="./images/ajun.jpg" alt="阿俊" style="width:100%;display:block"></div>
 <div>
-<p class="sec-label" style="text-align:left">About</p>
+<p class="sl" style="text-align:left">About</p>
 <h2 style="font-size:1.5rem;font-weight:600;margin-bottom:4px">阿俊 · 设计主理人</h2>
 <p style="color:rgba(0,0,0,.55);font-size:.85rem;margin-bottom:20px">空间设计大师 / AI设计师 / 品牌设计师</p>
 <p style="color:rgba(0,0,0,.55);font-size:.9rem;line-height:1.8;margin-bottom:30px">专注住宅全案设计体系研发，以“功能与视觉同步决策”为核心理念，构建从勘测、需求梳理、空间拆解到模型推演、效果落地的完整闭环。善于运用数字化工具与A I辅助设计，让每一处空间都兼具理性逻辑与感性美学。</p>
@@ -76,90 +74,83 @@ footer{border-top:1px solid rgba(0,0,0,.06);padding:30px 60px;display:flex;justi
 <div><div style="font-size:2.5rem;font-weight:700;color:#b8944a">200+</div><div style="color:rgba(0,0,0,.35);font-size:.75rem">落地项目</div></div>
 <div><div style="font-size:2.5rem;font-weight:700;color:#b8944a">98%</div><div style="color:rgba(0,0,0,.35);font-size:.75rem">客户满意度</div></div>
 </div>
-<div style="display:flex;flex-direction:column;gap:10px">
-<div style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;background:#b8944a;border-radius:50%"></span>湖北省武汉市光谷居然之家</div>
-<div style="display:flex;align-items:center;gap:8px"><span style="width:6px;height:6px;background:#b8944a;border-radius:50%"></span>sumei.design@foxmail.com</div>
-</div>
 </div></div></div>
 </section>
-
 <section id="projects" class="sec">
-<div class="sec-inner">
-<p class="sec-label">Selected Works</p>
-<h2 class="sec-title">精选项目</h2>
+<div class="si">
+<p class="sl">Selected Works</p>
+<h2 class="st">精选项目</h2>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/living-room-01.jpg" alt="???????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">???????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">??????????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/living-room-02.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">??????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/kitchen-01.jpg" alt="???????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">???????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">??????????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/kitchen-02.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">???????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/bedroom-01.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">??????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/bedroom-02.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">?????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/case-01.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Commercial . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">??????????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/case-02.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Commercial . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">????????????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/case-03.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Commercial . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">????????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/case-04.jpg" alt="?????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Commercial . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">?????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">??????????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/dining.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">????????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/living-room-01-v2.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">???????????????????????</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
-    <div style="overflow:hidden"><img src="./images/bedroom-01-v2.jpg" alt="??????" style="width:100%;height:auto;display:block"></div>
-    <div><span style="color:#b8944a;font-size:.75rem">Residential . ??</span>
-    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">??????</h3>
-    <p style="color:#666;font-size:.85rem;line-height:1.7">????????????????????????</p></div></div>
+    <div style="overflow:hidden"><img src="./images/living-room-01.jpg" alt="现代简约大平层" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 客厅</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">现代简约大平层</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">以极简线条与温润材质重塑空间，光影与生活的诗意对话。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/living-room-02.jpg" alt="都市雅致空间" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 客厅</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">都市雅致空间</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">克制的高级灰调，营造沉静而有温度的起居氛围。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/kitchen-01.jpg" alt="开放式餐厨一体" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 厨房</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">开放式餐厨一体</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">功能与美学的平衡艺术，让烹饪成为家庭互动的核心场景。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/kitchen-02.jpg" alt="现代轻奢餐厨" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 厨房</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">现代轻奢餐厨</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">大理石与木质的冷暖对话，精致细节中见生活品质。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/bedroom-01.jpg" alt="主卧套房设计" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 卧室</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">主卧套房设计</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">以静谧为底色，打造真正的休息庇护所。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/bedroom-02.jpg" alt="次卧空间方案" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 卧室</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">次卧空间方案</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">小空间也有大格局，细节之处见真章。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/case-01.jpg" alt="室内设计案例" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Commercial · 案例</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">室内设计案例</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">精品空间设计案例展示，展现不同风格与功能的完美结合。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/case-02.jpg" alt="现代风格案例" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Commercial · 案例</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">现代风格案例</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">以简约设计语言赋能空间，让每一处细节都精准传达设计意图。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/case-03.jpg" alt="家居空间案例" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Commercial · 案例</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">家居空间案例</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">从居民需求出发，构建既美观又实用的理想住宅空间。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/case-04.jpg" alt="功能与美学" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Commercial · 案例</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">功能与美学</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">将日常功能与视觉美学有机融合，创造有温度的生活场景。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/dining.jpg" alt="餐厅空间设计" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 餐厅</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">餐厅空间设计</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">开放式布局搭配精致餐具，营造温馨的家庭聚会场景。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/living-room-01-v2.jpg" alt="客厅方案叠代" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 客厅</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">客厅方案叠代</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">更多客厅空间可能性，同一户型的多样化设计解答。</p></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:40px;border:1px solid rgba(0,0,0,.08);margin-bottom:20px">
+    <div style="overflow:hidden"><img src="./images/bedroom-01-v2.jpg" alt="卧室方案叠代" style="width:100%;height:auto;display:block"></div>
+    <div><span style="color:#b8944a;font-size:.75rem">Residential · 卧室</span>
+    <h3 style="font-size:1.3rem;font-weight:600;margin:8px 0 12px">卧室方案叠代</h3>
+    <p style="color:#666;font-size:.85rem;line-height:1.7">更多卧室空间可能性，精心量身定制每一个休息场景。</p></div></div>
 </div>
 </section>
-
 <section id="contact" class="sec" style="min-height:80vh;display:flex;align-items:center">
-<div class="sec-inner" style="width:100%">
+<div class="si" style="width:100%">
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center">
 <div>
-<p class="sec-label" style="text-align:left">Contact</p>
+<p class="sl" style="text-align:left">Contact</p>
 <h2 style="font-size:clamp(2rem,4vw,3.5rem);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:24px">开始打造<br>你的理想空间</h2>
 <p style="color:rgba(0,0,0,.55);max-width:420px;margin-bottom:40px;font-size:1rem;line-height:1.8">每一个项目都是一次独一无二的创作。告诉我你的需求，让专业设计为你的生活注入新的可能。</p>
-<a href="#" class="btn" onclick="alert('感谢关注！请通过下方联系方式与我沟通。')">预约设计咨询 →</a>
+<a href="#" class="btn">预约设计咨询 →</a>
 </div>
 <div style="display:flex;flex-direction:column;gap:16px">
 <div style="background:rgba(0,0,0,.02);border:1px solid rgba(0,0,0,.08);padding:20px 24px"><div style="color:rgba(0,0,0,.35);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase">Location</div><div style="font-size:.95rem;font-weight:500">湖北省武汉市光谷居然之家</div></div>
 <div style="background:rgba(0,0,0,.02);border:1px solid rgba(0,0,0,.08);padding:20px 24px"><div style="color:rgba(0,0,0,.35);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase">Email</div><div style="font-size:.95rem;font-weight:500">sumei.design@foxmail.com</div></div>
 <div style="background:rgba(0,0,0,.02);border:1px solid rgba(0,0,0,.08);padding:20px 24px"><div style="color:rgba(0,0,0,.35);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase">WeChat</div><div style="font-size:.95rem;font-weight:500">SUMEI_DESIGN</div></div>
-<div style="background:rgba(0,0,0,.02);border:1px solid rgba(0,0,0,.08);padding:20px 24px"><div style="color:rgba(0,0,0,.35);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase">Hours</div><div style="font-size:.95rem;font-weight:500">周一至六·9:00 - 18:00</div></div>
+<div style="background:rgba(0,0,0,.02);border:1px solid rgba(0,0,0,.08);padding:20px 24px"><div style="color:rgba(0,0,0,.35);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase">Hours</div><div style="font-size:.95rem;font-weight:500">周一至六 · 9:00 - 18:00</div></div>
 </div></div></div>
 </section>
-
 <footer>
 <span>© 2025 SUMEI DESIGN. All rights reserved.</span>
 <span>速美设计工作室 · 阿俊聊设计</span>
